@@ -259,7 +259,9 @@ main .shape {
         display: block;
         position: fixed;
         background-color: #80808080;
-        backdrop-filter: blur(10px);
+        /* backdrop-filter: blur(10px); */
+        backdrop-filter: blur(10px) contrast(50%);
+        -webkit-backdrop-filter: blur(10px) contrast(50%);
         top: 75px;
         bottom: 0;
         left: 100%;
