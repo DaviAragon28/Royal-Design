@@ -319,8 +319,8 @@ main .shape {
 
     main .about-section  {
         /* gap: 40px; */
-        padding-top: 230px;
-        padding-top: 0;
+        /* padding-top: 230px; */
+        padding-top: 40px;
         height: 100vh;
     }
 
@@ -360,7 +360,7 @@ main .shape {
     main .projects-section div {
         border-radius: 20px;
         height: 350px;
-        width: 270px;
+        width: 230px;
         background-color: var(--main-color);
     }
     
