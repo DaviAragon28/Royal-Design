@@ -291,6 +291,7 @@ main .shape {
 
     main {
         padding: 0 29px;
+        margin-top: 115px;
     }
 
     main section {
@@ -300,13 +301,13 @@ main .shape {
     }
 
     main .intro {
-        justify-content: start;
+        justify-content: center;
         margin: 0 auto;
     }
 
     main .intro .ball-1 {
         left: 100px;
-        top: -50px;
+        top: 100px;
     }
 
     main .intro .ball-2 {
