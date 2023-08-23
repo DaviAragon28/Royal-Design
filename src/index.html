@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <!-- <link rel="shortcut icon" href="./public/static/logo.png" type="image/x-icon"> -->
-    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Royal Design</title>
 </head>
@@ -15,7 +14,6 @@
     <header>
         <nav>
             <ul class="brand">
-                <!-- <img src="./public/assets/logo.png" alt="Royal Design Logo"> -->
                 <li><a href="#top" class="name">Royal Design</a></li>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="32"
                     height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#35a679" fill="none"
@@ -26,12 +24,12 @@
                 </svg>
             </ul>
             <ul class="links">
-                <li><a href="#top">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#objectives">Objectives</a></li>
-                <li><a href="#contact-us">Contact us</a></li>
+                <li><a id="link" href="#home">Home</a></li>
+                <li><a id="link" href="#about-us">About us</a></li>
+                <li><a id="link" href="#services">Services</a></li>
+                <li><a id="link" href="#projects">Projects</a></li>
+                <li><a id="link" href="#objectives">Objectives</a></li>
+                <li><a id="link" href="#contact-us">Contact us</a></li>
                 <div class="icon-menu">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="32"
                         height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffff" fill="none"
@@ -60,7 +58,14 @@
             <div class="ball ball-2 animate__animated animate__heartBeat animate__infinite	 "></div>
             <div class="ball ball-3 animate__animated animate__rubberBand animate__infinite	"></div>
         </section>
-        <section class="about-section" id="about">
+        <section class="home-section" id="home">
+            <div>
+                <h1>¿QUÉ HACEMOS?</h1>
+                <p>Como empresa de marketing y contenido digital nos enfocamos en crear estrategias de marketing en línea, contenido de calidad y aprovechar las redes sociales para promover su marca.
+                </p>
+            </div>
+        </section>
+        <section class="about-section" id="about-us">
             <div>
                 <h1>¿QUIENES SOMOS?</h1>
                 <p>
@@ -76,7 +81,7 @@
                     destacarse en un mercado competitivo.
                 </p>
             </div>
-            <a href="">
+            <a href="./ROYAL.pdf" target="_blank">
                 <img src="./logo.webp" alt="">
             </a>
         </section>
@@ -118,15 +123,17 @@
         <section class="contactUs-section" id="contact-us">
             <h1>CONTACTO</h1>
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="32"
-                    height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#35a679" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                    <path
-                        d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
-                </svg>
-                <a class="social-media" href="https://www.instagram.com/vega_5_6/" target="_blank"> 
+                <a href="https://walink.co/e9694b" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp"
+                        width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#35a679" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                        <path
+                            d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                    </svg>
+                </a>
+                <a class="social-media" href="https://www.instagram.com/vega_5_6/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
                         width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#35a679" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -136,9 +143,10 @@
                         <path d="M16.5 7.5l0 .01" />
                     </svg>
                 </a>
-                <a class="social-media" href="https://www.facebook.com/carlosdaniel.palaciosvega.1" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-facebook" width="32" height="32" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="#35a679" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <a class="social-media" href="https://www.facebook.com/carlosdaniel.palaciosvega.1" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                        width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#35a679" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
                     </svg>
@@ -161,12 +169,12 @@
 
         <div class="menu">
             <ul>
-                <li><a href="#top">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#objectives">Objectives</a></li>
-                <li><a href="#contact-us">Contact us</a></li>
+                <li><a id="link" href="#home">Home</a></li>
+                <li><a id="link" href="#about-us">About us</a></li>
+                <li><a id="link" href="#services">Services</a></li>
+                <li><a id="link" href="#projects">Projects</a></li>
+                <li><a id="link" href="#objectives">Objectives</a></li>
+                <li><a id="link" href="#contact-us">Contact us</a></li>
             </ul>
         </div>
     </main>
