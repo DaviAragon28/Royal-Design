@@ -91,6 +91,11 @@ header nav .links {
     display: none;
 }
 
+.clicked {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -128,6 +133,10 @@ main .intro div {
     color: white;
 }
 
+main .intro h1 {
+    color: #fff;
+}
+
 main .intro .ball {
     position: absolute;
     width: 20px;
@@ -149,6 +158,23 @@ main .intro .ball-2 {
 main .intro .ball-3 {
     bottom: 100px;
 }
+
+main .home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70vh;
+    padding-top: 120px;
+    text-align: center;
+}
+
+main .home-section div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+
 
 main .about-section {
     display: flex;
@@ -364,7 +390,7 @@ main .shape {
         width: 250px;
     }
 
-    main .services-section {
+    main .services-section, main .home-section {
         padding-top: 0;
         height: 100vh;
     }
