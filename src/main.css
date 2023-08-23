@@ -200,16 +200,17 @@ main .about-section img {
 
 main .services-section {
     display: flex;
+    flex-direction: column;
     padding-top: 200px;
-    gap: 10px;
+    gap: 50px;
     justify-content: center;
     /* align-items: center; */
     height: 75vh;
     margin: 0 auto;
+    width: 600px;
 }
 
-main .services-section div {
-    width: 600px;
+main .services-section .container-text {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -219,6 +220,13 @@ main .services-section div {
 main .services-section p {
     text-align: center;
 }
+
+main .services-section .container-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 
 main .objectives-section {
     display: flex;
@@ -393,17 +401,19 @@ main .shape {
     main .services-section, main .home-section {
         padding-top: 0;
         height: 100vh;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 460px;
     }
-
-    main .services-section div {
-        width: auto;
+    
+    main .services-section .container-icons {
+        width: 100%;
     }
 
     main .projects-section {
         flex-direction: column;
         height: auto;
         gap: 40px;
-        /* height: 100vh; */
     }
 
     main .projects-section div {
