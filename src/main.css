@@ -140,10 +140,12 @@ main .intro .ball {
 main .intro .ball-1 {
     left: 100px;
 }
+
 main .intro .ball-2 {
     top: 200px;
     right: 100px;
 }
+
 main .intro .ball-3 {
     bottom: 100px;
 }
@@ -208,23 +210,51 @@ main .projects-section {
     display: flex;
     justify-content: space-between;
     /* flex-wrap: wrap; */
-    padding-top: 150px;
+    padding-top: 100px;
     height: 80vh;
 }
 
 main .projects-section div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
     border-radius: 20px;
     height: 350px;
     width: 300px;
-    background-color: var(--main-color);
+    background-color: #80808036;
+    /* backdrop-filter: blur(10px) contrast(50%); */
+}
+
+main .projects-section img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+main .projects-section h2 {
+    text-align: center;
 }
 
 main .contactUs-section {
     display: flex;
-    justify-content: space-around;
-    padding-top: 150px;
-    height: 80vh;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    /* padding-top: 150px; */
+    height: 100vh;
 }
+
+main .contactUs-section div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* main .contactUs-section div a {
+    width: 50px;
+    height: 50px;
+} */
 
 main .shape {
     position: fixed;
@@ -258,11 +288,11 @@ main .shape {
     .menu {
         display: block;
         position: fixed;
-        background-color: #80808080;
+        background-color: #272829cc;
         /* backdrop-filter: blur(10px); */
         backdrop-filter: blur(10px) contrast(50%);
         -webkit-backdrop-filter: blur(10px) contrast(50%);
-        top: 75px;
+        top: 70px;
         bottom: 0;
         left: 100%;
         z-index: 20;
@@ -276,10 +306,14 @@ main .shape {
     }
 
     .menu ul {
-        padding: 10px 20px;
+        padding: 40px;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
+    }
+
+    ul li a {
+        font-size: 20px;
     }
 
     .menu ul li a:hover {
@@ -295,7 +329,7 @@ main .shape {
         padding: 0 29px;
         margin-top: 0px;
     }
-    
+
     main section {
         flex-direction: column;
         width: auto;
@@ -303,7 +337,7 @@ main .shape {
 
         height: 100vh;
     }
-    
+
     main .intro {
         justify-content: center;
         margin: 0 auto;
@@ -319,7 +353,7 @@ main .shape {
         left: 100%;
     }
 
-    main .about-section  {
+    main .about-section {
         /* gap: 40px; */
         /* padding-top: 230px; */
         padding-top: 40px;
@@ -329,41 +363,49 @@ main .shape {
     main .about-section img {
         width: 250px;
     }
-    
+
     main .services-section {
         padding-top: 0;
         height: 100vh;
     }
-    
+
     main .services-section div {
         width: auto;
     }
-    
+
     main .projects-section {
         flex-direction: column;
         height: auto;
         gap: 40px;
         /* height: 100vh; */
     }
-    
-    main .projects-section div{
+
+    main .projects-section div {
         margin: 0 auto;
     }
-    
+
+    main .projects-section img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
     main .objectives-section {
         padding-top: 0;
         width: auto;
         height: 100vh;
     }
 
+
+
+
 }
 
-@media (min-width: 1023px ) and (max-width: 1300px) {
+@media (min-width: 1023px) and (max-width: 1300px) {
     main .projects-section div {
         border-radius: 20px;
         height: 350px;
         width: 230px;
-        background-color: var(--main-color);
     }
-    
+
 }
