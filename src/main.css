@@ -84,7 +84,42 @@ header nav .links {
     display: flex;
     gap: 26px;
     list-style: none;
+    align-items: center;
 }
+
+header nav .links button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* audio::-webkit-media-controls-panel {
+    background-color: var(--header);
+    border: none;
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: #B1D4E0;
+    border-radius: 50%;
+    display: none;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+    display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+    display: none;
+}
+
+audio::-webkit-media-controls-timeline {
+    background-color: #B1D4E0;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: none;
+} */
 
 .links .icon-menu {
     display: none;
@@ -309,7 +344,7 @@ main .projects-section div a {
 main .projects-section img {
     width: 100%;
     height: 200px;
-    object-fit: cover;   
+    object-fit: cover;
 }
 
 main .projects-section h2 {
