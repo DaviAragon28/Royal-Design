@@ -27,6 +27,7 @@ body {
     background-color: var(--header);
     color: var(--bone);
     height: 100vh;
+    position: relative;
 }
 
 header {
@@ -105,11 +106,21 @@ header nav .links {
 }
 
 main {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 90px;
-    margin-top: 150px;
+    margin-top: 65px;
     padding: 0px 45px;
+}
+
+main .container-balls {
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
 }
 
 h1 {
@@ -124,9 +135,11 @@ p {
 
 main .intro {
     position: relative;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 40px;
     height: 70vh;
 }
 
@@ -139,6 +152,11 @@ main .intro div {
     gap: 12px;
     margin-top: 20px;
     color: white;
+}
+
+main .intro video {
+    width: 500px;
+    cursor: pointer;
 }
 
 main .intro h1 {
@@ -156,6 +174,7 @@ main .intro .ball {
 
 main .intro .ball-1 {
     left: 100px;
+    top: 20%;
 }
 
 main .intro .ball-2 {
@@ -224,10 +243,9 @@ main .about-section img {
 main .services-section {
     display: flex;
     flex-direction: column;
-    padding-top: 200px;
+    padding-top: 130px;
     gap: 50px;
     justify-content: center;
-    /* align-items: center; */
     height: 75vh;
     margin: 0 auto;
     width: 600px;
@@ -263,9 +281,10 @@ main .objectives-section {
 }
 
 main .projects-section {
+    gap: 20px;
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     padding-top: 100px;
     height: 80vh;
 }
@@ -290,7 +309,7 @@ main .projects-section div a {
 main .projects-section img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: cover;   
 }
 
 main .projects-section h2 {
@@ -312,11 +331,6 @@ main .contactUs-section div {
     gap: 30px;
 }
 
-/* main .contactUs-section div a {
-    width: 50px;
-    height: 50px;
-} */
-
 main .shape {
     position: fixed;
     bottom: -5px;
@@ -325,14 +339,49 @@ main .shape {
     z-index: 3;
 }
 
+main .modal {
+    display: none;
+}
+
+main .opened-modal {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272829d9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main .modal .close {
+    position: absolute;
+    z-index: 10;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
+
     main .services-section {
-        width: 600px;
+        width: 500px;
     }
 }
 
 
 @media (max-width: 1023px) {
+
+    main .intro video {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    main .modal video {
+        min-width: 300px
+    }
     header nav {
         justify-content: space-between;
         padding: 19px;
