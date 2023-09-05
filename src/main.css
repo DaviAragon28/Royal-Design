@@ -558,7 +558,7 @@ main .modal .close {
         padding-top: 0;
         width: auto;
         height: 100vh;
-        margin-bottom: 300px;
+        /* margin-bottom: 300px; */
     }
 
     main .container-items-footer {
