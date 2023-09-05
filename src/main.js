@@ -5,8 +5,10 @@ const modal = document.querySelector('.modal')
 const closeModal = document.querySelector('.close')
 const videoComplete = document.querySelector('.video-complete')
 const links = document.querySelectorAll('#link')
-const playerButton = document.querySelector('.player-button')
-const music = document.querySelector('audio')
+const playerButtonDesktop = document.querySelector('.player-button-desktop')
+const musicDesktop = document.querySelector('.audio-desktop')
+const playerButtonMobile = document.querySelector('.player-button-mobile')
+const musicMobile = document.querySelector('.audio-mobile')
 const containerShape = document.querySelector('.shape')
 const footer = document.querySelector('.container-items-footer')
 const wave = document.querySelector('.wave')
@@ -32,17 +34,28 @@ stroke-linecap="round" stroke-linejoin="round">
 let linkModified
 let openMenu = false
 
-function toggleAudio() {
-    if (music.paused) {
-        music.play();
-        playerButton.innerHTML = pauseIcon;
+function toggleAudioMobile() {
+    if (musicMobile.paused) {
+        musicMobile.play();
+        playerButtonMobile.innerHTML = pauseIcon;
     } else {
-        music.pause();
-        playerButton.innerHTML = playIcon;
+        musicMobile.pause();
+        playerButtonMobile.innerHTML = playIcon;
+    }
+}
+function toggleAudioDesktop() {
+    if (musicDesktop.paused) {
+        musicDesktop.play();
+        playerButtonDesktop.innerHTML = pauseIcon;
+    } else {
+        musicDesktop.pause();
+        playerButtonDesktop.innerHTML = playIcon;
     }
 }
 
-playerButton.addEventListener('click', toggleAudio);
+playerButtonDesktop.addEventListener('click', toggleAudioDesktop)
+playerButtonMobile.addEventListener('click', toggleAudioMobile)
+
 
 
 openModal.addEventListener('click', () => {

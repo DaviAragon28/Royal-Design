@@ -460,6 +460,11 @@ main .modal .close {
         right: 0;
     }
 
+    .menu button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
     .opened {
         left: 30%;
         transition: all;
