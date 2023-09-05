@@ -71,7 +71,7 @@ header nav .name {
     text-shadow: 3px 0px #305aa8;
     text-decoration: none;
     word-spacing: 5px;
-    letter-spacing: 15px;
+    letter-spacing: 12px;
     list-style: none;
     font-family: 'agencyFont', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -93,35 +93,6 @@ header nav .links button {
     border: none;
     cursor: pointer;
 }
-
-/* audio::-webkit-media-controls-panel {
-    background-color: var(--header);
-    border: none;
-}
-
-audio::-webkit-media-controls-mute-button {
-    background-color: #B1D4E0;
-    border-radius: 50%;
-    display: none;
-}
-
-audio::-webkit-media-controls-current-time-display {
-    color: #fff;
-    display: none;
-}
-
-audio::-webkit-media-controls-time-remaining-display {
-    color: #fff;
-    display: none;
-}
-
-audio::-webkit-media-controls-timeline {
-    background-color: #B1D4E0;
-    border-radius: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: none;
-} */
 
 .links .icon-menu {
     display: none;
@@ -388,6 +359,7 @@ main .shape-to-footer {
 }
 
 main .container-items-footer {
+    display: none;
     height: 100%;
     flex-direction: row;
     text-align: center;
@@ -591,10 +563,6 @@ main .modal .close {
 
     main .container-items-footer {
         flex-direction: column;
-    }
-
-    main .wave {
-        top: -5rem
     }
 
 }
