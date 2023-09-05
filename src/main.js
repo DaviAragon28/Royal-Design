@@ -7,6 +7,11 @@ const videoComplete = document.querySelector('.video-complete')
 const links = document.querySelectorAll('#link')
 const playerButton = document.querySelector('.player-button')
 const music = document.querySelector('audio')
+const containerShape = document.querySelector('.shape')
+const footer = document.querySelector('.container-items-footer')
+const wave = document.querySelector('.wave')
+const contactUsSection = document.querySelector('#contact-us')
+
 const playIcon = `
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play"
 width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#35a679" fill="none"
@@ -80,3 +85,29 @@ iconMenu.addEventListener('click', () => {
         menu.classList.remove('opened')
     }
 })
+
+
+window.onscroll = function () {
+    const alturaTotalPagina = document.body.scrollHeight;
+    // Obtener la posición actual de desplazamiento vertical del usuario
+    const posicionActual = document.documentElement.scrollTop;
+    // Obtener la altura de la ventana visible
+    const alturaVentana = window.innerHeight;
+
+    // Verificar si la posición actual de desplazamiento más la altura de la ventana es igual o mayor que la altura total de la página
+    if (posicionActual + alturaVentana >= alturaTotalPagina) {
+        // Se ha llegado al final de la página
+        containerShape.classList.add('shape-to-footer')
+        contactUsSection.children[0].style.display = 'none'
+        contactUsSection.children[1].style.display = 'none'
+        wave.style.display = 'none'
+        // wave.style.top = `-20rem`
+        footer.style.display = 'flex'
+    } else {
+        contactUsSection.children[0].style.display = 'block'
+        contactUsSection.children[1].style.display = 'flex'
+        wave.style.display = 'block'
+        footer.style.display = 'none'
+        containerShape.classList.remove('shape-to-footer')
+    }
+};

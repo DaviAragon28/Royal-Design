@@ -70,7 +70,8 @@ header nav .name {
     /* font-weight: bold; */
     text-shadow: 3px 0px #305aa8;
     text-decoration: none;
-    letter-spacing: 6px;
+    word-spacing: 5px;
+    letter-spacing: 15px;
     list-style: none;
     font-family: 'agencyFont', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -92,6 +93,7 @@ header nav .links button {
     border: none;
     cursor: pointer;
 }
+
 /* audio::-webkit-media-controls-panel {
     background-color: var(--header);
     border: none;
@@ -321,7 +323,7 @@ main .projects-section {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 100px;
-    height: 80vh;
+    /* height: 80vh; */
 }
 
 main .projects-section div {
@@ -358,6 +360,7 @@ main .contactUs-section {
     justify-content: center;
     /* padding-top: 150px; */
     height: 100vh;
+    margin-bottom: 100px;
 }
 
 main .contactUs-section div {
@@ -372,6 +375,39 @@ main .shape {
     left: 0;
     right: 0;
     z-index: 3;
+    padding-top: 15px;
+    transition: 0.2s all;
+}
+
+main .shape-to-footer {
+    height: 420px;
+    /* transform: translateY(-200px); */
+    transition: 0.2s all;
+    background-color: var(--main-color);
+    /* position: static; */
+}
+
+main .container-items-footer {
+    height: 100%;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+main .container-items-footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .container-items-footer .container-locations a {
+    text-decoration: none;
+}
+
+main .container-items-footer span {
+    color: white;
 }
 
 main .modal {
@@ -417,6 +453,13 @@ main .modal .close {
     main .modal video {
         min-width: 300px
     }
+
+    header nav .name {
+        word-spacing: 0px;
+        letter-spacing: 12px;
+        font-size: 21px;
+    }
+
     header nav {
         justify-content: space-between;
         padding: 19px;
@@ -543,10 +586,16 @@ main .modal .close {
         padding-top: 0;
         width: auto;
         height: 100vh;
+        margin-bottom: 300px;
     }
 
+    main .container-items-footer {
+        flex-direction: column;
+    }
 
-
+    main .wave {
+        top: -5rem
+    }
 
 }
 
@@ -556,5 +605,4 @@ main .modal .close {
         height: 350px;
         width: 230px;
     }
-
 }
